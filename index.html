@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Dynamic Document System 
+		</title>
+		    <link href="Content/bootstrap.css" rel="stylesheet" />
+		    <link href="Content/alertify.bootstrap.css" rel="stylesheet" />
+		    <link href="Content/alertify.core.css" rel="stylesheet" />
+		    <link href="Content/alertify.default.css" rel="stylesheet" />
+	</head>
+	<body ng-app="dynamicDocumentApp">
+		<dinv class=" wrapper container">
+			<nav class = "navbar navbar-default">
+				<div class = "container">
+					<div class="navbar-header">
+				      <a class="navbar-brand" href="#">Dynamic Document</a>
+				    </div>
+					<ul class = "nav navbar-nav">
+						<li class = "dropdow">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Document</a>
+							<ul class="dropdown-menu">
+					          <li><a href="#new_document">New</a></li>
+					          <li><a href="#manage_document">Manage</a></li>
+					        </ul>
+						</li>
+						<li class = "dropdow">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Fields</a>
+							<ul class="dropdown-menu">
+					          <li><a href="#new_field">New</a></li>
+					          <li><a href="#manage_field">Manage</a></li>
+					        </ul>
+						</li>
+					</ul>
+			</nav>
+		</div>
+		<div class="container">
+			<div ng-view></div>
+		</div>
+		<script src="Scripts/jquery-1.10.2.js"></script>
+		<script src="Scripts/bootstrap.js"></script>
+		<script src="Scripts/utils.js"></script>
+		<script src="Scripts/alertify.js"></script>
+		<script src="Scripts/angular.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+		<script src="Scripts/app.js"></script>
+	</body>
+</html>

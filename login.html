@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/login.js"></script>
+    <script src="Scripts/utils.js"></script>
+    <script src="Scripts/alertify.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/alertify.bootstrap.css" rel="stylesheet" />
+    <link href="Content/alertify.core.css" rel="stylesheet" />
+    <link href="Content/alertify.default.css" rel="stylesheet" />
+    <style>
+    	.container {
+		    margin-top: 60px;
+		    width: 35% !important;
+		    height: 35% !important;
+		}
+		.row {
+		    margin-bottom: 10px;
+		}
+		.well {
+		    background-color: white;
+		}
+		.btn-submit {
+		    margin-bottom: 20px;
+		}
+		.btn-primary {
+		    margin-top: 20px !important;
+		}
+	
+    </style>
+</head>
+<body>
+    <div class="container top-space">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-primary text-center">Welcome</p>
+            </div>
+        </div>
+        <div class="well">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="text-default text-left">Sign in</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <strong>Username</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="email" class="form-control" placeholder="User name" id="userName">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <strong>Password</strong>
+                </div>
+                <div class="col-md-5">
+                    <a href="#"><p class="text-primary text-right">Forgot password?</p></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="password" class="form-control" placeholder="Password" id="password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-primary btn-block btn-submit" onclick="validate()">Submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <small>Not a member?</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-default btn-block">Create your account here</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center"><small class="text-default">All Rights Reserved</small></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
